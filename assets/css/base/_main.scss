@@ -1,0 +1,37 @@
+html,body{
+  overflow-x: hidden;
+}
+
+body {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    font-family: "Geomanist-Light","Helvetica Neue",Helvetica,Arial,sans-serif;
+    color: #555;
+    background: #f3f3f3;
+    font-size: 16px;
+    line-height: 30px;
+}
+
+.underline{
+  &:after {
+      content: "";
+      display: block;
+      margin-top: 20px;
+      width: 45px;
+      height: 3px;
+      background-color: #411b8a;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+  }
+  &.underline-secondary{
+    &:after{
+      background-color: #01ffed; 
+      @media (min-width: 960px){
+        margin-left: 0;
+        margin-right: 0;
+      }
+    }
+  }
+}
