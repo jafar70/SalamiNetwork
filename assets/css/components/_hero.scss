@@ -47,23 +47,4 @@
       left: 12%;
     }
   }
-  
-  &.curve{
-    &:after {
-      content: "";
-      width: 100%;
-      display: block;
-      height: 200px;
-      z-index: 10;
-      position: relative;
-      background-image: url(../img/curve.svg);
-      background-size: contain;
-      background-color: transparent;
-      background-repeat: no-repeat;
-      background-position: right -5px bottom -1px;
-      @media (min-width: 1200px) {
-          margin-top: 60px;
-      }
-    }
-  }
 }

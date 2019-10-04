@@ -13,6 +13,10 @@ body {
     line-height: 30px;
 }
 
+h2{
+  font-size: 37px;
+}
+
 .underline{
   &:after {
       content: "";
@@ -31,6 +35,86 @@ body {
       @media (min-width: 960px){
         margin-left: 0;
         margin-right: 0;
+      }
+    }
+  }
+  &.underline-primary:after {
+     background-color: #8d33aa;
+  }
+  &.underline--center{
+    &:after{
+      display: block;
+      margin-left: auto;
+      margin-right: auto; 
+    }
+  }
+}
+
+.introduction{
+  margin-top: 35px;
+  padding-bottom: 300px;
+  @media only screen and (max-width: 960px){
+    padding-bottom: 30%;
+  }
+  .introduction__row{
+    display: grid;
+    grid-template-columns: 66.66%;
+    justify-content: center;
+    @media only screen and (max-width: 960px) {
+        grid-template-columns: auto;
+    }
+    .introduction__text{
+      text-align: center;
+      .introduction__title{
+         font-size: 37px;
+      }
+      .introduction__description{
+        
+      }
+    }
+  }
+}
+
+.whatis{
+  background-color: #411b8a;
+  padding-bottom: 80px;
+  .whatis__title{
+    color: #fff;
+    text-align: center;
+  }
+  .whatis__img-container{
+    max-width: 50%;
+    margin: 0 auto;
+    @media only screen and (max-width: 960px) {
+      max-width: 75%;
+    }
+    .whatis__img{
+      max-width: 100%;
+      position: relative;
+      margin: -450px auto 40px;
+//       @media only screen and (max-width: 960px) {
+//             margin-top: -48%;
+//       }
+    }
+  }
+  .whatis__row{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    @media only screen and (max-width: 960px) {
+      grid-template-columns: 1fr;
+    }
+    .whatis__text{
+      padding-right: 10px;
+      padding-left: 10px;
+      margin-left: 10%;
+      @media only screen and (max-width: 960px) {
+        margin-left: 0;
+      }
+      p{
+        color: #fff;
+        @media only screen and (max-width: 960px) {
+          text-align: center;
+        }
       }
     }
   }
