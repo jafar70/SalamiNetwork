@@ -5,7 +5,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Salami Network</title>
-  <link rel="stylesheet" href="assets/css/style.min.css">
+  <link rel="stylesheet" href="assets/dist/style.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
 </head>
 
 <body>
@@ -87,9 +88,124 @@
   </section>
   <!--- End of What is --->
   
+  <!--- How does it work? --->
+  <section class="howdoesitwork">
+    <div class="container">
+      <h2 class="howdoesitwork__title underline underline-primary"> How does it work? </h2>
+      
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="swiper-slide__col">
+              <div class="swiper-slide__col__order">
+                <p>1</p>
+              </div>
+              <div class="swiper-slide__col__img">
+                <img src="assets/img/box-3.svg" alt="Box">
+              </div>
+              <div class="swiper-slide__col__caption">
+                <p>
+                  Operators upload their fares to the blockchain.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="swiper-slide__col">
+              <div class="swiper-slide__col__order">
+                <p>2</p>
+              </div>
+              <div class="swiper-slide__col__img">
+                <img src="assets/img/box-3.svg" alt="Box">
+              </div>
+              <div class="swiper-slide__col__caption">
+                <p>
+                  Operators upload their fares to the blockchain.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="swiper-slide__col">
+              <div class="swiper-slide__col__order">
+                <p>3</p>
+              </div>
+              <div class="swiper-slide__col__img">
+                <img src="assets/img/box-3.svg" alt="Box">
+              </div>
+              <div class="swiper-slide__col__caption">
+                <p>
+                  Operators upload their fares to the blockchain.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="swiper-slide__col">
+              <div class="swiper-slide__col__order">
+                <p>4</p>
+              </div>
+              <div class="swiper-slide__col__img">
+                <img src="assets/img/box-3.svg" alt="Box">
+              </div>
+              <div class="swiper-slide__col__caption">
+                <p>
+                  Operators upload their fares to the blockchain.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="swiper-slide__col">
+              <div class="swiper-slide__col__order">
+                <p>5</p>
+              </div>
+              <div class="swiper-slide__col__img">
+                <img src="assets/img/box-3.svg" alt="Box">
+              </div>
+              <div class="swiper-slide__col__caption">
+                <p>
+                  Operators upload their fares to the blockchain.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="swiper-slide__col">
+              <div class="swiper-slide__col__order">
+                <p>6</p>
+              </div>
+              <div class="swiper-slide__col__img">
+                <img src="assets/img/box-3.svg" alt="Box">
+              </div>
+              <div class="swiper-slide__col__caption">
+                <p>
+                  Operators upload their fares to the blockchain.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
   
+  <!--- End of How does it work? ---->
+  
+  <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
   <script>
+    var swiper = new Swiper('.swiper-container', {
+      slidesPerView: 3,
+      initialSlide: 1,
+      spaceBetween: 30,
+      centeredSlides: true,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+    });
   </script>
+
 </body>
 
 </html>

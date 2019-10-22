@@ -70,7 +70,7 @@ nav {
         }
         &:not(:only-child):after {
           padding-left: 4px;
-          content: ' ▾';
+          content: '0xE2';
         }
       } // Dropdown list
       ul li {
