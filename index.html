@@ -192,19 +192,55 @@
   
   <!--- End of How does it work? ---->
   
+  <!--- Features --->
+  <section class="features curve-flip">
+    <img src="assets/img/features1.png" alt="" class="feature__img feature__img__1">
+    <div class="container">
+      <div class="features__row">
+        <div class="features__row__col">
+          <h2 class="rev underline underline-secondary">Integrated multi-modal transport</h2>
+          <p class="rev">For the first time, Planar now allows passengers and operators the ability to purchase travel tickets from multiple transport operators in a single transaction and store them in an on-chain, portable ticket wallet.</p>
+          <p class="rev">This can be multiple modes of transport or operators across the same network. Both retailers and passengers are now in more control of travel.</p>
+        </div>
+      </div>
+      <div class="features__row">
+        <div class="features__row__col">
+          <h2 class="rev underline underline-secondary">Integrated multi-modal transport</h2>
+          <p class="rev">For the first time, Planar now allows passengers and operators the ability to purchase travel tickets from multiple transport operators in a single transaction and store them in an on-chain, portable ticket wallet.</p>
+          <p class="rev">This can be multiple modes of transport or operators across the same network. Both retailers and passengers are now in more control of travel.</p>
+        </div>
+      </div>
+      <div class="features__row">
+        <div class="features__row__col">
+          <h2 class="rev underline underline-secondary">Integrated multi-modal transport</h2>
+          <p class="rev">For the first time, Planar now allows passengers and operators the ability to purchase travel tickets from multiple transport operators in a single transaction and store them in an on-chain, portable ticket wallet.</p>
+          <p class="rev">This can be multiple modes of transport or operators across the same network. Both retailers and passengers are now in more control of travel.</p>
+        </div>
+      </div>
+    </div>
+    <img class="feature__img features-img-2" src="https://planar.network/assets/img/features2.png" alt="Fast distributed financial settlement">
+  </section>
+  <!--- End of Features --->
   
   
   <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
   <script>
     var swiper = new Swiper('.swiper-container', {
       slidesPerView: 3,
-      initialSlide: 1,
       spaceBetween: 30,
       centeredSlides: true,
       pagination: {
         el: '.swiper-pagination',
         clickable: true,
       },
+      breakpoints: {
+        440: {
+          slidesPerView: 1,
+        },
+        960: {
+          slidesPerView: 3,
+        },
+      }
     });
   </script>
 

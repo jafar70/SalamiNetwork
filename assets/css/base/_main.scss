@@ -11,6 +11,8 @@ body {
     background: #f3f3f3;
     font-size: 16px;
     line-height: 30px;
+    overflow-x:hidden;
+    overflow-y:hidden;
 }
 
 h2{
@@ -124,8 +126,123 @@ h2{
 }
 
 .howdoesitwork{
+  padding: 50px 0;
   .howdoesitwork__title{
     text-align: center;
-    padding: 50px 0;
+    padding: 0 0 50px 0;
+    margin: 0;
   }
+}
+
+.features{
+  background: #411b8a;
+  position: relative;
+  overflow: hidden;
+      background-image: url(https://planar.network/assets/img/line-left.png);
+    background-position: -5px 55%;
+    background-repeat: no-repeat;
+    background-size: 450px 826px;
+  @media (max-width: 992px){
+    background-image: none;
+  }
+  .container{
+    margin-top: -210px;
+    @media (min-width: 992px){
+      margin-top: 0;
+    }
+  }
+  
+ .feature__img {
+    width: 70%;
+    position: relative;
+    left: 34%;
+    @media (min-width: 992px) {
+        position:absolute;
+        z-index: 5;
+        left: auto
+} 
+    &.feature__img__1 {
+    top: -212px;
+      @media (min-width: 992px) {
+        width:582px;
+        height: 750px;
+        right: -20px;
+        top: -0.5%
+}
+
+@media (min-width: 1200px) {
+        width:645px;
+        height: 830px;
+        right: 0
+}
+}
+    &.features-img-2 {
+    bottom: -60px;
+    margin-top: -60px;
+      
+      @media (min-width: 992px) {
+        width:550px;
+        height: 698px;
+        right: -20px;
+        bottom: -20px
+}
+
+@media (min-width: 1200px) {
+        width:610px;
+        height: 774px;
+        right: 0;
+        bottom: -100px
+}
+}
+
+  }
+  .features__row{
+     display: flex;
+    flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: space-between;
+    align-items: center;
+    &:nth-child(even) {
+      justify-content: flex-end;
+    }
+
+    .features__row__col{
+      padding: 100px 0 200px;
+      width: calc(50% - 20px);
+      @media only screen and (max-width: 960px) {
+        width: 100%;
+        text-align:center;
+      }
+      @media only screen and (max-width: 992px) {
+        padding: 0;
+      }
+      h2{
+        color: #fff;
+      }
+      p{
+        color: #fff;
+      }
+    }
+  }
+}
+
+
+.features-img-2 {
+    bottom: -60px;
+    margin-top: -60px;
+      
+      @media (min-width: 992px) {
+        width:550px;
+        height: 698px;
+        right: -20px;
+        bottom: -20px
+}
+
+@media (min-width: 1200px) {
+        width:610px;
+        height: 774px;
+        right: 0;
+        bottom: -100px
+}
 }
